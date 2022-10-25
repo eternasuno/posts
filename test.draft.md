@@ -2,8 +2,11 @@
 title: "test"
 date: "2022-09-13"
 tags: ["test", "test"]
-excerpt: "测试文件"
 ---
+
+测试文件
+
+<!-- excerpt -->
 
 图片测试
 
