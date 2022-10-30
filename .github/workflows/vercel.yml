@@ -1,15 +1,13 @@
-name: Deploy to vercel
+name: Publish to vercel
 
 on:
     push:
         branches: [ "main" ]
 
 jobs:
-    deploy:
+    publish:
         runs-on: ubuntu-latest
+        if: "contains(github.event.head_commit.message, '[publish]')"
         steps:
-            - name: deploy
-              run: |
-                curl ${{ secrets.VERCEL_TOKEN }}
-        
-        
+            - name: publish
+              run: curl ${{ secrets.VERCEL_DEPLOY_HOOK }}
