@@ -1,7 +1,7 @@
 ---
 title: "test"
 date: "2022-09-13"
-tags: ["test", "test"]
+tags: ["test"]
 ---
 
 测试文件
