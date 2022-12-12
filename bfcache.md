@@ -13,7 +13,7 @@ tags: ["browser", "programming"]
 测试使用的机型为 MacBook Air (M1, 2020)，系统版本为 macOS 12.6 (21G115)。浏览器分别为 Safari(16.0)，Chrome(108.0)，Edge(108.0)，Firefox(106.0)。PHP 版本为 8.2 使用 PHP 内置测试服务器进行测试。
 
 使用的代码如下：
-```PHP
+```php
 // index.php
 <a href="/add.php">Go To Add Page</a>
 <div>
@@ -140,7 +140,7 @@ Firefox 测试结果如下，在 add 页面添加数据 firefox 后返回 index 
 ## 禁用缓存的方法
 
 1. 通过在服务器的响应头中添加 `cache-control:no-store` 的 header 可以提示浏览器不缓存相关内容，但是该 header 并不是强制的。
-```PHP
+```php
 <?php
     // do not store cache
     header('cache-control:no-store');
